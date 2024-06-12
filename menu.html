@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+    font-family: 'Noto-sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.header img {
+    width: 100%;
+    height: auto;
+}
+.header img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header img:last-child {
+    position: relative;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.album-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+.album-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+}
+.artist-name {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    transition: font-size 0.3s ease;
+}
+.album-title {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+    transition: font-size 0.3s ease;
+}
+.additional-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #555;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.full-width-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.navbar {
+    position: absolute;
+    top:15px;
+    left: 78%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 15px;
+}
+.navbar a {
+    text-decoration: none;
+    font-weight: 413;
+    font-size: 1.2em;
+    color: #626262;
+    border-radius: 10px;
+    transition: background-color 1s;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.navbar a i {
+    margin-right: 10px;
+}
+.navbar a:hover {
+    background-color: #ccc;
+    color: #ccc;
+}
+intro-section {
+    text-align: center;
+}
+
+.album-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 413;
+    font-size: 1.2em;
+    color: #626262;
+    border-radius: 10px;
+    transition: background-color 1s;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 140px 20px 20px; 
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9; 
+    transition: background-color 0.3s ease;
+}
+
+.album-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 40px; 
+}
+
+.album-container {
+    text-align: center;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.album-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.album-image:hover {
+    transform: rotate(3deg) scale(1.03);
+}
+
+.artist-name, .album-title {
+    transition: font-size 0.3s ease;
+}
+
+.artist-name {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.album-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.album-description {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em; 
+    background-color: #444; 
+    color: #ccc; 
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555; 
+}
+
+
+.button:hover {
+    background-color: #555; 
+}
+.album-row {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+<div class="header">
+    <img src="https://i.imgur.com/M6mKJNn.png" alt="상단 이미지">
+    <img src="https://i.imgur.com/id0ABU3.png" alt="추가 이미지">
+</div>
+<nav class="navbar">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+    <a href="menu.html"><i class="fas fa-bars"></i> Menu</a>
+</nav>
+<div class="content">
+    <div class="intro-section">
+        <h1>최신 앨범 소개</h1>
+        <p>Newsic에서는 다양한 장르의 최신 음악을 만나보세요. 새롭고 다채로운 음악을 감상하실 수 있습니다.</p>
+    </div>
+    <div class="album-row">
+        <div class="album-container">
+            <a href="sy.html" target="_blank">
+                <img src="https://i.imgur.com/yKVLX8y.png" alt="앨범 이미지" class="album-image">
+            </a>
+            <div class="artist-name">생각의 여름</div>
+            <div class="album-title">손</div>
+            <div class="album-description">
+                일렁여야만 살아남을 수 있다고, 생존기계의 본능으로 살아온 파도들에게 화자는 그 당위의 명제들을 부수자고 말한다. 그렇게 해서 자음과 모음이 합쳐져 소리를 내듯이 우리가 그렇게 연대해 이 광활한 관계의 바다에서 손을 잡자고. 그리고 묻는다. 새로운 새벽이 올 것인지. 생각의 여름의 [손]에 담긴 달콤한 화성의 철갑을 두른 결과물은 이 앙시엥레짐 시대를 살아가는 소시민의 혼돈과 정서를 대변한다.
+                <br><br>2023 최우수 포크 - 음반
+                <br>선정위원 현지운
+                
+            </div>
+            <div class="button-container">
+                <a href="https://youtu.be/wVx_qLak6Rc?si=a0wNDqGiyUtESDLf" target="_blank" class="button">Let's play</a>
+            </div>
+        </div>
+        <div class="album-container">
+            <a href="yj.html" target="_blank">
+                <img src="https://i.imgur.com/uWVmf9p.png" alt="앨범 이미지" class="album-image">
+            </a>
+            <div class="artist-name">Daniel Caesar</div>
+            <div class="album-title">Let Me Go</div>
+            <div class="album-description">
+                "Let Me Go"는 그의 부드러운 보컬과 감정적인 가사로 유명하며, 사랑과 관련된 갈등과 그로 인한 이별에 대해 다루고 있습니다. 이 곡은 그의 음악적 스타일과 감성을 잘 대표하는 작품 중 하나입니다. 
+            </div>
+            <div class="button-container">
+                <a href="https://youtu.be/link3" target="_blank" class="button">Let's play</a>
+            </div>
+        </div>
+        <div class="album-container">
+            <a href="es.html" target="_blank">
+                <img src="https://i.imgur.com/B6uI6R9.png" alt="앨범 이미지" class="album-image">
+            </a>
+            <div class="artist-name">실리카겔</div>
+            <div class="album-title">Andre99</div>
+            <div class="album-description">
+                앤드리(Andrea)라는 곡은 그들의 데뷔 앨범인 "Sylvan Esso" (2014년 발매)에 수록되어 있습니다. "앤드리"는 이목을 끄는 펑키한 비트와 멜라니 마르틴스의 매혹적인 베이스를 갖고있다.
+            </div>
+            <div class="button-container">
+                <a href="https://youtu.be/link4" target="_blank" class="button">Let's play</a>
+            </div>
+        </div>
+        <div class="album-container">
+            <a href="ms.html" target="_blank">
+                <img src="https://i.imgur.com/ki1yhy7.png" alt="앨범 이미지" class="album-image">
+            </a>
+            <div class="artist-name">The Beatles</div>
+            <div class="album-title">Abby Road</div>
+            <div class="album-description">
+                이 곡은 햇살이 녹아든 따뜻한 봄날을 상상케 하는 멜로디와 가사로 유명합니다. 해리슨은 이 노래를 자신의 당시 인생 상황을 반영하여 작곡했는데, 비틀즈의 내부 갈등과 스트레스 속에서도 새로운 희망과 긍정성을 찾으려는 그의 마음을 담고 있습니다.
+            </div>
+            <div class="button-container">
+                <a href="https://youtu.be/link5" target="_blank" class="button">Let's play</a>
+            </div>
+        </div>
+    </div>
+    <div class="info-section">
+        <h2>더 많은 정보</h2>
+        <p>더 많은 정보나 문의는 아래의 연락처로 문의해주세요.</p>
+        <p>Email: info@newzic.com</p>
+        <p>전화번호: 010-1234-5678</p>
+        <p>주소: 서울특별시 강남구 신사동 123-45</p>
+    </div>
+</div>
+<div class="additional-image-container">
+    <a href="https://imgur.com/leuj6ZV" target="_blank">
+        <img src="https://i.imgur.com/7cwCf6Y.png" alt="추가 이미지" class="full-width-image">
+    </a>
+</div>
+<script>
+window.addEventListener('scroll', function() {
+    let artistName = document.querySelector('.artist-name');
+    let albumTitle = document.querySelector('.album-title');
+    if (window.scrollY > 50) {
+        artistName.style.fontSize = '1em';
+        albumTitle.style.fontSize = '1em';
+    } else {
+        artistName.style.fontSize = '2em';
+        albumTitle.style.fontSize = '1.5em';
+    }
+});
+</script>
+</body>
+</html>
+
+
+</html>

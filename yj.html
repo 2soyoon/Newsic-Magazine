@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>daniel caesar</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+    font-family:  Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.header img {
+    width: 100%;
+    height: auto;
+}
+.header img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header img:last-child {
+    position: relative;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.album-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px; 
+}
+.album-image {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+.artist-name {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    transition: font-size 0.3s ease;
+}
+.album-title {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+    transition: font-size 0.3s ease;
+}
+.additional-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #555;
+}
+.additional-image-container {
+            width: auto;
+            max-width: 90%;
+            height: center;
+            border-radius: 20px; 
+            margin: center;
+        }
+.navbar {
+    position: absolute;
+    top: 15px;
+    left: 78%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 15px;
+}
+.navbar a {
+    text-decoration: none;
+    font-weight: 413;
+    font-size: 1.2em;
+    color: #626262;
+    border-radius: 10px;
+    transition: background-color 1s;
+    display: flex;
+    align-items: center;
+    padding: 5px; 
+}
+.navbar a i {
+    margin-right: 10px; 
+}
+.navbar a:hover {
+    background-color: #ccc;
+}
+ .clickable-image {
+    max-width: 50%; 
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.clickable-image:hover {
+    transform: scale(1.4) translateX(5px); 
+}
+
+.image-description {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+h2 {
+    text-align: center;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.full-width-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.section {
+    text-align: center;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <img src="https://i.imgur.com/M6mKJNn.png" alt="상단 이미지">
+    <img src="https://i.imgur.com/id0ABU3.png" alt="추가 이미지">
+</div>
+<nav class="navbar">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+    <a href="menu.html"><i class="fas fa-bars"></i> Menu</a>
+</nav>
+<div class="content">
+    <div class="album-container" style="text-align: center;">
+        <img src="https://i.imgur.com/uWVmf9p.png" alt="Album Image" class="album-image">
+        <div class="artist-name">
+            Daniel Caesar
+        </div>
+        <div class="album-title">
+            NEVER ENOUGH
+        </div>
+        <div class="button-container">
+            <a href="https://youtu.be/R7ofTTdMh6A?si=YJIkIAUBJlX9XSiN" target="_blank" class="button">Let's play</a>
+        </div>
+        <img src="https://i.imgur.com/wVSMLrZ.jpg" alt="Additional Image" class="additional-image">
+    </div>
+</div>
+<div class="content">
+    <div class="section" style="text-align: center;">
+        <h2>다니엘 시저의 역사</h2>
+        <p>토론토 스카버러(Scarborough) 지역에서 태어났고, 오샤와에서 어린 시절을 지냈다. 목사이자 가스펠 가수이기도 한 아버지를 따라 제칠일안식일예수재림교회를 다녔다. 17살에 아버지와 싸운 후 집을 나와 노숙자처럼 지냈으며 뮤지션이 되길 꿈꾸며 길거리 공연을 하며 지내다 2014년 그의 첫 데뷔 EP인 《Praise Break》를 발매하게 되고, 롤링 스톤 알앤비 앨범 차트 19위에 오르며 괜찮은 반응을 받았다.2015년 발매한 두번째 EP 역시 좋은 반응을 얻었으며, 2017년 자신의 첫 정규 앨범인 《Freudian》을 발매한다. 이 앨범으로 제60회 그래미 어워드 베스트 알앤비 앨범 및 베스트 알앤비 퍼포먼스 후보에 오르게 되었으며, 두번째 정규 《CASE STUDY 01》에 수록된 싱글 Best Part로 그래미 어워드 베스트 알앤비 퍼포먼스를 수상한다. 2021년에는 저스틴 비버의 싱글 Peaches에 피처링하며 그의 첫 빌보드 핫 100 1위 기록을 하게 된다.</p>
+        <a href="https://www.instagram.com/danielcaesar/" target="_blank">
+            <img src="https://i.imgur.com/mhSqHsU.png" alt="다니엘 시저" title="source: imgur.com" class="clickable-image">
+            <div class="image-description">
+                다니엘 시저의 INSTAGRAM 방문하기
+            </div>
+        </a>
+    </div>
+    <div class="section" style="text-align: center;">
+        <h2>다니엘 시저 프로필</h2>
+        <p><strong>본명:</strong> 애슈턴 더머 노윌 시먼즈 (Ashton Dumar Norwill Simmonds)</p>
+        <p><strong>출생:</strong> 1995년 4월 5일/ 온타리오주 토론토</p>
+        <p><strong>국적:</strong> 캐나다</p>
+        <p><strong>데뷔:</strong> 2014년 EP Praise Break</p>
+        <p><strong>장르:</strong> R&B,소울,네오</p>
+        <p><strong>레이블:</strong> Golden Child</p>
+        <p><strong>신체:</strong> 180cm/ 76kg</p>
+    </div>
+    <div class="section" style="text-align: center;">
+        <h2>다니엘 시저의 대표곡</h2>
+        <p><strong>Get You (feat. Kali Uchis):</strong> 2019.06.28/ 그의 돌파구가 된 곡으로, 독특한 멜로디와 감성적인 가사가 특징이다.</p>
+        <p><strong>Best Part(feat. H.E.R):</strong> 2018.08.25/ 틱톡이나 다양한 매체에서 큰 인기를 끌었고, 그래미 어워드에서 최우수 R&B 공연상을 수상했다.</p>
+    </div>
+    <div class="section" style="text-align: center;">
+        <h2>다니엘 시저의 영향력</h2>
+        <p>다니엘 시저는 그의 독특한 음악 스타일과 진정성 있는 가사로 많은 팬들과 음악 평론가들로부터 찬사를 받고 있다.</p>
+        <p>그는 현대 R&B 씬에서 중요한 인물 중 하나로 자리매김하였으며, 그의 음악은 종종 젊은 세대의 사랑과 관계에 대한 진솔한 이야기로 평가받고 있습니다.</p>
+    </div>
+    <div class="section" style="text-align: center;">
+        <h2>다니엘 시저의 음악 스타일</h2>
+        <p>다니엘 시저의 음악 주로 <strong>R&B</strong>와 소울 장르에 속하며, 종종 가스펠과 네오 소울 요소도 포함 된다.</p>
+        <p>그의 음악은 <strong>사랑, 관계, 자아성찰</strong>의 주제를 다루며, 감성적이고 심도 있는 가사로 많은 사람들의 공감을 얻고 있다.</p>
+    </div>
+    <div class="section" style="text-align: center;">
+        <h2>여담</h2>
+        <p>Freudian과 다른 노래들이 성공하기 전까지 사실상 노숙자 수준의 생활을 했었다. 다만 Freudian이 성공하고 난 뒤에는 경제적으로는 안정적이 되었지만 심적으로는 더 흔들렸다고 한다.</p>
+        <p>한국의 알앤비 가수 DEAN 과 친분이 있고 미발매긴 하지만 둘이 작업도 했다.</p>
+        <p>물복, 딱복중 딱복을 좋아한다고 한다.</p>
+        <p>다니엘 시저는 개인적인 삶에 대해 비교적 비공개를 유지하고 있으며, 주로 음악과 관련된 활동에 집중하고 있습니다. 그의 신앙과 가족 배경이 그의 음악에 큰 영향을 미쳤다고 알려져 있습니다.</p>
+    </div>
+</div>
+<div class="additional-image-container">
+        <a href="https://imgur.com/leuj6ZV" target="_blank">
+            <img src="https://i.imgur.com/7cwCf6Y.png" alt="추가 이미지" class="full-width-image">
+        </a>
+    </div>
+
+<script>
+window.addEventListener('scroll', function() {
+    let artistName = document.querySelector('.artist-name');
+    let albumTitle = document.querySelector('.album-title');
+    if (window.scrollY > 50) {
+        artistName.style.fontSize = '1em';
+        albumTitle.style.fontSize = '1em';
+    } else {
+        artistName.style.fontSize = '2em';
+        albumTitle.style.fontSize = '1.5em';
+    }
+});
+</script>
+</body>
+</html>

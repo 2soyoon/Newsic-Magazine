@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsic</title>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+           font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+
+        .header img:first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%; 
+            max-width: 1200px; 
+            margin-bottom: 10px;
+        }
+          .navbar {
+    position: absolute;
+    top:15px;
+    left: 78%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 413;
+    font-size: 1.2em;
+    color: #626262;
+    border-radius: 10px;
+    transition: background-color 1s;
+    display: flex;
+    align-items: center;
+    padding: 5px; 
+}
+
+.navbar a i {
+    margin-right: 10px; 
+}
+.navbar a:hover {
+    background-color: #ccc; 
+    color: #fff; 
+}
+
+        .under-lp {
+            font-size: 100px;
+            font-weight: bold;
+            font-family: "Century Gothic", sans-serif;
+            display: block;
+            
+        }
+
+ 
+
+        .image-container {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            overflow: hidden;
+            margin-top: 50px;
+        
+        }
+
+        .rotating-image {
+            width: 100%;
+            height: auto;
+            animation: rotate 10s linear infinite;
+        }
+
+        .footer {
+            background-color: lightgray;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .image-container {
+                width: 80%;
+                max-width: 800px;
+            }
+
+            .under-lp {
+                font-size: 40px; 
+                margin-top: 10px; 
+            }
+
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+              
+            }
+
+            .nav-link {
+                margin-top: 10px; 
+            
+            }
+        }
+
+    .additional-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+      
+      .ex-text{
+        margin-bottom:30px;
+      }
+
+        .album-cover1 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+          margin-bottom: 150px;
+        }
+
+        .album-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .album-cover1 img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .album-text {
+            width: 280px;
+            text-align: center;
+            font-family: "Century Gothic", sans-serif;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 100px;
+        }
+      .sample-text{
+        margin-top: 160px;
+        font-family: "Georgiar", serif;
+        font-size: 20px;
+      }
+      .additional-image-container {
+      width: auto;
+            max-width: 75%;
+            height: center;
+            border-radius: 20px; 
+         
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+      <img src="https://i.imgur.com/M6mKJNn.png" alt="상단 이미지">
+</div>
+   <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="menu.html"><i class="fas fa-bars"></i> Menu</a>
+    </nav>
+   <div class="sample-text">
+     New Wave Music Magazine
+  </div>
+<div class="content-container">
+    <div class="under-lp">Newsic</div>
+
+ 
+    <div class="image-container">
+        <img src="https://i.imgur.com/j6G2oTh.png" alt="Rotating Image" class="rotating-image">
+    </div>
+</div>
+  
+    <div class="ex-text">
+      <h3> 사진을 누르면 소개페이지로 넘어갑니다. </h3>
+      </div>
+
+<div class="album-cover1">
+    <div class="album-item">
+        <a href="yj.html" target="_blank"><img src="https://i.imgur.com/op5IkwJ.jpg"></a>
+      <div class="album-text"><b>Never Enough </b><br><br>  Daniel Caesar  </div>
+    </div>
+    <div class="album-item">
+        <a href="ms.html" target="_blank"><img src="https://i.imgur.com/Muk3ctU.jpg"></a>
+        <div class="album-text"><b>Abbey Road</b><br><br> The Beatles</div>
+    </div>
+    <div class="album-item">
+        <a href="sy.html" target="_blank"><img src="https://i.imgur.com/yKVLX8y.png"></a>
+        <div class="album-text"><b>손</b><br><br> 생각의여름</div>
+    </div>
+    <div class="album-item">
+        <a href="es.html" target="_blank"><img src="https://i.imgur.com/5rV4nIt.jpg"></a>
+        <div class="album-text"><b>새삼스레 들이켜본 <br>무중력 사슴의 다섯가지 시각</b><br>실리카겔</div>
+    </div>
+</div>
+
+
+      </div>
+  <div class="additional-image-container">
+        <a href="https://imgur.com/leuj6ZV" target="_blank">
+            <img src="https://i.imgur.com/7cwCf6Y.png" alt="추가 이미지" class="full-width-image">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

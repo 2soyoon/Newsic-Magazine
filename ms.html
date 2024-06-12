@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Beatles</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center; 
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.header img {
+    width: 100%;
+    height: auto;
+}
+.header img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header img:last-child {
+    position: relative;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.album-container {
+    text-align: center; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+.album-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+}
+.artist-name {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    transition: font-size 0.3s ease;
+}
+.album-title {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+    transition: font-size 0.3s ease;
+}
+.additional-image-container {
+            width: auto;
+            max-width: 90%;
+            height: center;
+            border-radius: 20px; 
+            margin: center;
+        }
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.button-container {
+    text-align: center; 
+    margin: 20px 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #555;
+}
+.navbar {
+    position: absolute;
+    top: 15px;
+    left: 78%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 15px;
+}
+.navbar a {
+    text-decoration: none;
+    font-weight: 413;
+    font-size: 1.2em;
+    color: #626262;
+    border-radius: 10px;
+    transition: background-color 1s;
+    display: flex;
+    align-items: center;
+    padding: 5px; 
+}
+.navbar a i {
+    margin-right: 10px; 
+}
+.navbar a:hover {
+    background-color: #ccc;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.full-width-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.section {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+        <img src="https://i.imgur.com/M6mKJNn.png" alt="상단 이미지">
+        <img src="https://i.imgur.com/id0ABU3.png" alt="추가 이미지">
+    </div>
+    <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="menu.html"><i class="fas fa-bars"></i> Menu</a>
+    </nav>
+<div class="content">
+    <div class="album-container">
+        <a href="https://imgur.com/a/VOLVufl" target="_blank">
+            <img src="https://i.imgur.com/Jn9uSxv.jpg" alt="Album Image" class="album-image">
+        </a>
+        <div class="artist-name">
+          -The Beatles
+        </div>
+        <div class="album-title">
+           Here Comes the Sun
+        </div>
+        <div class="button-container">
+            <a href="https://youtu.be/GKdl-GCsNJ0?si=e7A64d47fiKl435J" target="_blank" class="button">Let's play</a>
+        </div>
+        <a href="https://imgur.com/Lc4FzgN" target="_blank">
+            <img src="https://i.imgur.com/pLyl4Ve.jpg" alt="Additional Image" class="additional-image">
+        </a>
+    </div>
+</div>
+<div class="content">
+    <div class="section" style="text-align:center;">
+        <h2>비틀즈의 역사</h2>
+        <p>비틀즈는 20세기 가장 유명한 록 밴드 중 하나이다. 1960년대 초반 리버풀에서 결성되어 전 세계적으로 큰 사랑을 받았던 그들의 독창적인 음악과 카리스마는 대중문화에 지대한 영향을 끼쳤다.</p>
+        <img src="https://i.imgur.com/id395A0.jpg" title="source: imgur.com" alt="비틀즈의 역사 이미지">
+    </div>
+    <div class="section" style="text-align:center;">
+        <h2>비틀즈의 멤버들</h2>
+        <p><strong>존 레논:</strong> 밴드의 리더이자 메인 보컬, 기타리스트이자 작곡가. 반전 평화주의자로 유명하다.</p>
+        <p><strong>폴 매카트니:</strong> 멜로디와 화음을 담당한 베이시스트. 비틀즈의 가장 영향력 있는 작곡가 중 한명이다.</p>
+        <p><strong>조지 해리슨:</strong> 리드 기타리스트로 영적인 면모를 보여주며 비틀즈의 음악 방향에 큰 영향을 끼쳤다.</p>
+    </div>
+    <div class="section" style="text-align:center;">
+        <h2>비틀즈의 음악 스타일</h2>
+        <p>1. 팝 록: 캐치한 멜로디와 리듬, 화려한 코드 진행으로 대중의 사랑을 받았다.</p>
+        <p>2. 실험적 사운드: 후기 앨범에서는 전자음과 녹음기술을 활용한 기발한 실험을 선보였다.</p>
+        <p>3. 음악적 진화: 시간이 지날수록 점점 더 창의적이고 독창적인 음악을 만들어냈다.</p>
+    </div>
+    <div class="section" style="text-align:center;">
+        <h2>비틀즈의 대표곡</h2>
+        <p><strong>Hey Jude:</strong> 1968년에 발표된 이 노래는 길고 감성적인 멜로디와 가사로 유명하다. 많은 사람들이 이 노래를 사랑하고 부르며 흥겨운 분위기를 만들어준다.</p>
+        <p><strong>Let It Be:</strong> 1970년 발표된 이 곡은 비틀즈의 대표적인 발라드로, 위안과 평화의 메시지를 전한다. 그리고 아름다운 멜로디와 감동적인 가사로 사람들을 위로해준다.</p>
+        <p><strong>Yesterday:</strong> 멜란콜리한 분위기와 아름다운 멜로디로 유명한 이 곡은 비틀즈의 대표 명곡 중 하나이다. 많은 사람들이 이 곡을 들으면서 추억에 젖을 수 있다.</p>
+        <p><strong>Come Together:</strong> 1969년 발표된 이 노래는 비틀즈의 실험적이고 독창적인 면모를 보여준다. 그리고 특유의 그루브와 고요한 분위기로 사람들을 매료시킨다.</p>
+    </div>
+    <div class="section" style="text-align:center;">
+        <h2>비틀즈의 영향력</h2>
+        <p>1. 대중문화 혁신: 비틀즈는 록 음악을 대중화하고 음악 비디오, 개념 앨범 등의 새로운 형식을 선도했다.</p>
+        <p>2. 사회문화적 영향: 그들의 반전 평화 메시지와 실험적 예술관은 1960년대 문화혁명의 한 축을 담당했다.</p>
+        <p>3. 음악적 유산: 비틀즈의 창의성과 영향력은 후대 가수들에게 지대한 영향을 미쳤다.</p>
+    </div>
+    <div class="section" style="text-align:center;">
+        <h2>비틀즈의 해체와 유산</h2>
+        <p><strong>내적 갈등:</strong> 성공과 명성에도 불구하고 멤버들 간의 갈등이 점차 심화되었다.</p>
+        <p><strong>공식 해체:</strong> 1970년 공식 해체를 선언한 비틀즈는 짧은 활동 기간에도 불구하고 대중문화에 지대한 영향을 끼쳤다.</p>
+        <p><strong>음악적 유산:</strong> 비틀즈의 음악적 유산은 오늘날까지도 살아 숨 쉬며, 많은 음악가들에게 영감을 주고 있다.</p>
+    </div>
+    <div class="section" style="text-align:center;">
+        <h2>비틀즈의 인기 앨범</h2>
+        <p><strong>Abbey Road:</strong> 1969년 발매된 이 앨범은 그들의 실험적인 사운드와 완성도 높은 음악으로 큰 사랑을 받았다. 특히 'Come Together', 'Something' 등의 히트곡이 수록되어 있다.</p>
+        <p><strong>Sgt. Pepper's Lonely Hearts Club Band:</strong> 1967년 발매된 이 앨범은 비틀즈의 가장 혁신적이고 영향력 있는 작품 중 하나로, 개념 앨범의 시초로 평가받고 있다.</p>
+    </div>
+    </div>
+    </div>
+    <div class="info-section">
+        <h2>더 많은 정보</h2>
+        <p>더 많은 정보나 문의는 아래의 연락처로 문의해주세요.</p>
+        <p>Email: info@newzic.com</p>
+        <p>전화번호: 010-1234-5678</p>
+        <p>주소: 서울특별시 강남구 신사동 123-45</p>
+    </div>
+</div>
+<div class="additional-image-container">
+    <a href="https://imgur.com/leuj6ZV" target="_blank">
+        <img src="https://i.imgur.com/7cwCf6Y.png" alt="추가 이미지" class="full-width-image">
+    </a>
+</div>
+<script>
+window.addEventListener('scroll', function() {
+    let artistName = document.querySelector('.artist-name');
+    let albumTitle = document.querySelector('.album-title');
+    if (window.scrollY > 50) {
+        artistName.style.fontSize = '1em';
+        albumTitle.style.fontSize = '1em';
+    } else {
+        artistName.style.fontSize = '2em';
+        albumTitle.style.fontSize = '1.5em';
+    }
+});
+</script>
+</body>
+</html>
+
+
+</html>

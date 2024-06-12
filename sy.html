@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="newsic" content="width=device-width, initial-scale=1.0">
+<title>생각의여름</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.header img {
+    width: 100%;
+    height: auto;
+}
+.header img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header img:last-child {
+    position: relative;
+}
+
+  
+
+          .navbar {
+    position: absolute;
+    top:15px;
+    left: 78%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 413;
+    font-size: 1.2em;
+    color: #626262;
+    border-radius: 10px;
+    transition: background-color 1s;
+    display: flex;
+    align-items: center;
+    padding: 5px; 
+}
+
+.navbar a i {
+    margin-right: 10px; 
+}
+.navbar a:hover {
+    background-color: #ccc; 
+    color: #fff; 
+}
+
+  
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+  .album-container {
+  text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.album-image {
+    width: 100%;
+    height: auto;
+    width:500px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.artist-name {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    transition: font-size 0.3s ease;
+}
+.album-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #555;
+    transition: font-size 0.3s ease;
+}
+.additional-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #555;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.full-width-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.description {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 60px;
+}
+    .thro{
+    font-weight:bold;
+    font-size: 35px;
+     margin-top:100px;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+    <img src="https://i.imgur.com/M6mKJNn.png" alt="상단 이미지">
+    <img src="https://i.imgur.com/id0ABU3.png" alt="추가 이미지">
+</div>
+  <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="menu.html"><i class="fas fa-bars"></i> Menu</a>
+    </nav>
+<div class="content">
+    <div class="album-container">
+       <a href="https://imgur.com/a/VOLVufl" target="_blank">
+            <img src="https://i.imgur.com/yKVLX8y.png" alt="Album Image" class="album-image">
+        </a>
+    </div>
+    <div class="artist-name">
+        <a href="https://example.com/artist" target="_blank">생각의여름</a>
+    </div>
+    <div class="album-title">
+        <a href="https://example.com/album" target="_blank">손</a>
+    </div>
+    <div class="button-container">
+        <a href="https://youtu.be/wVx_qLak6Rc?si=a0wNDqGiyUtESDLf" target="_blank" class="button">Let's play</a>
+    </div>
+    <div class="additional-image-container">
+    </a>
+    
+    </div>
+    <div class="description">
+        <div class="thro">
+      "깊어가는 여름의 생각, 생각의 노래"
+  </div>
+        <a href="https://i.imgur.com/34e0Bfk.jpeg" target="_blank">
+            <img src="https://i.imgur.com/34e0Bfk.jpeg" alt="Additional Image" class="additional-image">
+        </a>
+<div class="content">
+
+        <p>
+    <b>‘생각의 여름’</b>은 싱어송라이터 박종현의 1인 프로젝트이다. <br><br> <br><br>
+    2005년 ‘치기 프로젝트’로 데뷔한 후 2009년 정규 1집을 내면서 <b>생각의 봄인 ‘사춘기(思春期)’의 다음 시기를 의미하는 생각의 여름</b>이라는 이름을 쓰기 시작한 이래 지금까지 이어져 오고 있다. <br>
+  통기타와 목소리를 중심으로 노래를 만들고 부른다는 점에서 일단 포크 음악이라 지칭할 수 있지만 본인은 자신의 음악을 제약할 수도 있다는 생각으로 그러한 분류를 꺼리는 편이다. <br><br>
+
+    <b>‘말을 짓고 노래를 만든다’</b>는 특유의 작법으로 치열하게 갈고 닦은 노랫말이 특징이다. <br>
+   그러다 보니 않아 ‘1절-후렴-2절-후렴’의 반복이 특징인 전형적인 대중음악의 구성과는 달리 <br>필요 없는 말의 중복을 피하기 위해 간결한 구성의 노래들을 만드는 편이고, 한 때는 ‘다 덜어낸 노래’라는 문구로 그의 음악을 수식하곤 했다.
+    <br>그럼에도 <b>노래의 선율을 매끈하게 뽑아내는 특유의 감각, 그리고 사람을 잡아 끄는 매력이 있는 타고난 목소리의 음색은 그의 말을 노래로 만들고 음악으로서 가치를 갖게 한다.</b> <br>
+<br><br>
+<b>2009년에 1집 [생각의 여름]을 발매했다.</b> <br>
+당시 특별한 홍보 활동이 없었음에도 거의 입소문에 기대어 3000장이 넘는 CD 판매를 기록하며 생각의 여름을 애호하는 이들을 모아내며 은근하면서도 강한 팬덤을 갖게 됐다.
+   <br> 개인적인 사정으로 인해 드문드문 공연하는 것을 제외하고는 별다른 활동은 없던 그는 2012년에 2집 [곶]을 발매했고, 총 11곡이 수록되어 있음에도 <br>17분에 불과한 전체 재생 시간에도 느껴지듯 간결함을 극도로 추구한 이 음반은 반드시 순서대로 듣도록 전곡을 하나로 묶어낸 파격적인 CD의 구성으로 찬반 양론을 끌어냈다.
+    <br>
+
+그나마 있던 공연 활동도 중단한 채 긴 휴지기에 들어간 생각의 여름은 그렇게 다시 3년이 흘러 이제 그의 새로운 음악을 듣기는 어렵겠구나 싶었던 2016년, 돌연 3집 [다시 숲 속으로]로 돌아왔다. <br>
+    음반 전체가 하나의 구성을 이루는 서사적인 서정과 잘 닦인 단어들과 문장들이 여전한 가운데, 여러 연주자의 참여로 다채로워진 음악의 구성은 덜어내야 한다는 강박 자체를 다시 한번 덜어낸 박종현 나름의 성숙을 반영한 듯 했다.
+<br><br>
+그리고 데뷔 7년만의 첫 전국 투어를 진행하며 음악가로서 충실한 여름을 보냈다. <br>
+그리고 다시 1년이 지나 여름이 왔고, 마치 자신의 계절이 찾아온 것처럼 생각의 여름은 새로운 싱글 [From a Tree Perspective]와 함께 돌아왔다. 
+    <br> 지난 1집과 2집을 합한 앨범을 바이닐로 재발매하며 그동안 절판으로 인해 아쉬웠던 팬들에게 즐거운 소식도 함께다. 
+    
+    <br><br><br><br>특히 이번 싱글은 연작을 염두에 두고 있는 곡이라니 매번 다시 만날 수 있을까 마음을 졸여야 했던 걱정은 더 이상 안 해도 될 것 같다. 
+    <br>앞으로 매년 여름마다 그를 만날 수 있지 않을까 싶으니.
+  <br><br>  <br><b><i>하긴, 그가 자신의 프로젝트에 ‘생각의 여름’이라는 이름을 붙일 때부터 여름은 그의 계절이었다.</i></b> 
+  </p>
+    </div>
+    <div class="add-img"><a href="https://imgur.com/prjdNLz" target="_blank">
+        <img src="https://i.imgur.com/sV3CK8G.jpeg" alt="추가 이미지" class="additional-image">
+    </a>
+      </div>
+    <div class="additional-image-container">
+        <a href="https://imgur.com/leuj6ZV" target="_blank">
+            <img src="https://i.imgur.com/7cwCf6Y.png" alt="추가 이미지" class="full-width-image">
+        </a>
+    </div>
+</div>
+
+<script>
+window.addEventListener('scroll', function() {
+    let artistName = document.querySelector('.artist-name');
+    let albumTitle = document.querySelector('.album-title');
+    if (window.scrollY > 50) {
+        artistName.style.fontSize = '1em';
+        albumTitle.style.fontSize = '1em';
+    } else {
+        artistName.style.fontSize = '2em';
+        albumTitle.style.fontSize = '1.5em';
+    }
+});
+</script>
+</body>
+</html>
